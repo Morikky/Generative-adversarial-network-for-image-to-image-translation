@@ -1,7 +1,6 @@
 # Generative-adversarial-network-for-image-to-image-translation
 
-The translation is from real images into segmented images that use color encoding to separate different objects in the real images (like: cars, buildings, trees etc.). 
-![img1](https://github.com/Morikky/Generative-adversarial-network-for-image-to-image-translation/blob/main/Plots/Example_img_from_dataset.png)
+The translation is from real images into segmented images that use color encoding to separate different objects in the real images (like: cars, buildings, trees etc.). ![img1](https://github.com/Morikky/Generative-adversarial-network-for-image-to-image-translation/blob/main/Plots/Example_img_from_dataset.png)
 The real and segmented images (also called source and target images) are from the Cityscapes dataset (https://www.cityscapes-dataset.com/). The dataset is not shared here. 300 pairs of images with resolution of 256x256 are used for training. Additional images from the validation dataset are used to evaluate the model. The typical use of a validation dataset is not part of the model training, since the GAN model does not converge.
 
 The code presented here is based on the source https://machinelearningmastery.com/how-to-develop-a-pix2pix-gan-for-image-to-image-translation/ . 

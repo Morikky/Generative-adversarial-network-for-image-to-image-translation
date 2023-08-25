@@ -8,7 +8,7 @@ The real and segmented images (also called source and target images) are from th
 
 The code presented here is based on the source https://machinelearningmastery.com/how-to-develop-a-pix2pix-gan-for-image-to-image-translation/ . 
 
-It is a typical GAN implementation that includes a model for each of the so-called generator and discriminator. The two are then combined in a higher model that is called the GAN model. This combined model allows the generator to get better in producing data that resembles the real data, while the discriminator learns to distinguish between the real and fake data. 
+It is a typical GAN implementation that includes a model for each of the so-called generator and discriminator. The two are then combined in a higher model that is called the GAN model. This combined model allows the generator to get better in producing "fake" data that resembles the real data (from the training set), while the discriminator learns to distinguish between real and fake data. 
 
 Typically, the generator creates fake data out of random data (like in the known MNIST digits dataset) and the discriminator is input with real and fake data that are labeled. Here, however, since it is an image-to-image translation task, the source and target images are input to the generator, and it produces a fake target image out of the source image. The fake target image is improved by a comparison to the real target image (comparison in the sense of L1 loss minimization). The discriminator, in the image-to-image case, takes a source image and a real and a fake target image as inputs, and learns to classify a target image as real/fake for a given source image. The discriminator learns through the minimization of a binary cross entropy loss term. 
 

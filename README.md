@@ -24,7 +24,7 @@ For the first image, capturing of the sidewalk (in pink on the left) and of peop
 
 In the second image, cars, buildings and trees are segmented clearly. The coloring of the road (in purple) after 10 epochs is a bit noisy, but this noise vanishes with a higher number of epochs. As in the first image, traffic sign capturing is unsuccessful. However, the poles on the right side might start to appear after the maximal number of epochs used here. Moreover, bright buildings in the back of the image might have been mistaken for skies, as they were colored  in light blue. 
 
-In the third image, the separation between the overlapping car (in dark blue) and sidewalk (in pink) on the right is clearly seen to improve as the model is further trained.  
+In the third image, the separation between the overlapping car (in dark blue) and sidewalk (in pink) on the left is clearly seen to improve as the model is further trained.  
 
 
 

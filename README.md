@@ -1,6 +1,6 @@
 # Generative-adversarial-network-for-image-to-image-translation
 
-The translation is from real images into segmented images that use color encoding to separate different objects in the real images (like: cars, buildings, trees, etc.).
+The translation is from real images into segmented images that use color encoding to separate different objects in the real images (like: cars, buildings, trees, etc.). A Generative Adversarial Network (GAN) model is trained to perform this image-to-image translation.
 
 ![img1](https://github.com/Morikky/Generative-adversarial-network-for-image-to-image-translation/blob/main/Plots/Example_img_from_dataset.png)
 

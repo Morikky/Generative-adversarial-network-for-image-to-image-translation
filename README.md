@@ -20,11 +20,11 @@ To show the results, three instances are randomly selected from the validation d
 
 add image grid
 
-first image: positive: negative: capturing of poles is unsuccessfull even after the maximal number of traing iterations. Positive:  a difficult image beacuse of the many overlapping objects (padestrains in the vorground of thestreet signs)
+first image:  negative: capturing of poles is unsuccessfull even after the maximal number of traing iterations. Positive: successfuully captures the road and sidwalks.  Overall, a difficult image beacuse of the many overlapping objects im the image center (padestrains in the vorground of street signs, etc.)
 
-second image, negaitive: noise on the coloring of the road (in purple) and of the buliding (on the right). But, its level are reduced as training advances. Positive: capturing of vegetation is succesfull with only 10 epochs.  that  neagitve 
+second image, negaitive:  coloring of the road (in purple) and of the buliding on the right is noisy. . But, the noise level is reduced as training advances. Positive: capturing of vegetation is succesfull with only 10 epochs.  Moreover the blue buliding might have been mistaken as the sky (and colored in blue).
 
-third image, positive: with more the epochs sepeartion of overlapping objects (car and pedestrian) is imporved.   negative, capturing of sidewalks (pink surface in background) is unscessfull.
+third image, positive: with more the epochs sepeartion of overlapping objects (car and pedestrian) is seen to be imporved. Negative: The capturing of sidewalks (pink surface in background) is unscessfull.
 
 
 

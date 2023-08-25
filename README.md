@@ -10,7 +10,7 @@ The code presented here is based on the source https://machinelearningmastery.co
 
 It is a typical GAN implementation that includes a model for each of the so-called generator and discriminator. The two are then combined in a higher model that is called the GAN model. This combined model allows the generator to get better in producing data that resembles the real data, while the discriminator learns to distinguish between the real and fake data. 
 
-Typically, the generator creates fake data out of random data (like in the known MNIST digits dataset) and the discriminator is input with real and fake data that are labeled. Here, however, since it is an image-to-image translation task, the source and target images are input to the generator, and it produces a fake target image out of the source image. The fake target image is improved by a comaprison to the real target image (comparison in the sense of L1 loss minimization). The discriminator, in the image-to-image case, takes a source image and a real and a fake target image as inputs, and learns to classify a target image as real/fake for a given source image. The discriminator learns through the minimization of a binary cross entropy loss term. 
+Typically, the generator creates fake data out of random data (like in the known MNIST digits dataset) and the discriminator is input with real and fake data that are labeled. Here, however, since it is an image-to-image translation task, the source and target images are input to the generator, and it produces a fake target image out of the source image. The fake target image is improved by a comparison to the real target image (comparison in the sense of L1 loss minimization). The discriminator, in the image-to-image case, takes a source image and a real and a fake target image as inputs, and learns to classify a target image as real/fake for a given source image. The discriminator learns through the minimization of a binary cross entropy loss term. 
 
 Worth mentioning that the discriminator is trained on its own, and the generator is trained as part of the GAN model. Moreover, in the GAN model, a weighting of the two loss contributions in favor of the L1 loss over the binary cross entropy loss (100-fold) is added in order for the model to produce fake target images that resembles the real target images and not just fake target images that would pass the discriminator.
 
@@ -20,11 +20,11 @@ To show the results of training the model, three instances are randomly selected
 
 ![image grid](https://github.com/Morikky/Generative-adversarial-network-for-image-to-image-translation/blob/main/Plots/image_grid.png)
 
-For the first image, capturing of the sidwalk (in pink on the left) and of people (in red on the center) is seen to improve as the training advances. On the negative side, capturing of poles (in gray) and traffic signs (in yellow) is unsuccessfull, even after 70 traing iterations. 
+For the first image, capturing of the sidewalk (in pink on the left) and of people (red in the center) is seen to improve as the training advances. On the negative side, capturing of poles (in gray) and traffic signs (in yellow) is unsuccessful, even after 70 training iterations. 
 
-In the second image, cars, bulidings and trees are segmented clearly. The coloring of the road (in purple) after 10 epochs is a bit noisy, but this noise vanishes with a higher number of epochs. As in the first image, traffic sign caturing is unscessful. However, the poles on the right side might start to appear after the maximal number of epochs used here. Moreover, bright bulidings in the back of the image are might mistaken for skies (as they were cololred in light blue). 
+In the second image, cars, buildings and trees are segmented clearly. The coloring of the road (in purple) after 10 epochs is a bit noisy, but this noise vanishes with a higher number of epochs. As in the first image, traffic sign capturing is unsuccessful. However, the poles on the right side might start to appear after the maximal number of epochs used here. Moreover, bright buildings in the back of the image might have been mistaken for skies, as they were colored  in light blue. 
 
-In the third image, the sepeartion between the overlapping car (in dark blue) and sidewalk (in pink) is clearly seen to improve as the model is further trained.  
+In the third image, the separation between the overlapping car (in dark blue) and sidewalk (in pink) on the right is clearly seen to improve as the model is further trained.  
 
 
 

@@ -18,7 +18,7 @@ Additionally, the generator model is based on the U-Net architecture; a convolut
 
 To show the results, three instances are randomly selected from the validation dataset. The source and target images of each instance are shown in one row (in the extreme left and extreme right, respectively) and between them the model-generated target images after 10, 40 and 70 training epochs are shown. This presents the evolution of the model performance along the training. 
 
-add image grid
+[add image grid](https://github.com/Morikky/Generative-adversarial-network-for-image-to-image-translation/blob/main/Plots/image_grid.png)
 
 first image:  negative: capturing of poles is unsuccessfull even after the maximal number of traing iterations. Positive: successfuully captures the road and sidwalks.  Overall, a difficult image beacuse of the many overlapping objects im the image center (padestrains in the vorground of street signs, etc.)
 

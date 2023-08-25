@@ -4,7 +4,7 @@ The translation is from real images into segmented images that use color encodin
 
 ![img1](https://github.com/Morikky/Generative-adversarial-network-for-image-to-image-translation/blob/main/Plots/Example_img_from_dataset.png)
 
-The real and segmented images (also called source and target images) are from the Cityscapes dataset (https://www.cityscapes-dataset.com/). The dataset is not shared here. 300 pairs of images with resolution of 256x256 are used for training. Additional images from the validation dataset are used to evaluate the model. The typical use of a validation dataset is not part of the model training, since the GAN model does not converge.
+The real and segmented images (also called source and target images) are from the Cityscapes dataset (https://www.cityscapes-dataset.com/). The dataset is not shared here. 300 pairs of images with resolution of 256x256 are used for training. Additional images from the validation dataset are used to evaluate the model. 
 
 The code presented here is based on the source https://machinelearningmastery.com/how-to-develop-a-pix2pix-gan-for-image-to-image-translation/ . 
 
@@ -17,3 +17,5 @@ The discriminator, in the image-to-image case, takes a source image (real image)
 Additionally, the generator model is based on the U-Net architecture; a convolution neural network (CNN) that gradually reduces the size of the array, which is the output of the convolution filters, and then increases it back to the original image size. These changes in the array size are done through the convolution filters that their parameters are the ones that are trained. The discriminator model also uses CNN to reduces the original image size down to a final patch of size 16x16 (the source mentions a patch size of 70x70, however here a patch size of 16x16 is seen). The loss function of the discriminator is set with a weight of 0.5 to slow down its training relative to the training rate of the generator. This, reported by the source, have a positive effect on the training. 
 
 To show the results, three instances are randomly selected from the validation dataset. The source and target images of each instance are shown in one row (in the extreme left and extreme right, respectively) and between them the model-generated target images after 10, 40 and 70 training epochs are shown. This presents the evolution of the model performance along the training. 
+
+The typical use of a validation dataset is not a part of the model training, since the GAN model does not converge.
